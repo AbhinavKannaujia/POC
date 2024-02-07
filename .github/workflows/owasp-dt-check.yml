@@ -25,7 +25,7 @@ jobs:
         id: riskscoreFromDT
         uses:  AbhinavKannaujia/POC@master
         with:
-          url: 'https://dtrack.poc.com'
+          url: 'http://localhost:8080/projects/159f4b3e-b80c-4e3e-a748-1030a3f7eb47'
           language: 'java'
       
       # Show the risk score output 
