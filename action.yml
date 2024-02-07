@@ -3,7 +3,7 @@ description: 'Description of your action'
 author: 'Your Name'
 
 runs:
-  using: 'java'  # Use Ubuntu as the runtime environment
+  using: 'node20'  # Use Ubuntu as the runtime environment
   steps:
    - name: Checkout code
      uses: actions/checkout@v2
