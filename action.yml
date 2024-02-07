@@ -1,3 +1,22 @@
-name: 'My Custom Action'
-description: 'This is a custom GitHub Action'
-author: 'Your Name'
+name: Java Maven CI
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Build with Maven
+      run: mvn -B package --file pom.xml
+
+    - name: Run tests
+      run: mvn test --file pom.xml
+
