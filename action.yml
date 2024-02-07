@@ -1,0 +1,17 @@
+name: 'Your Action Name'
+description: 'Description of your action'
+author: 'Your Name'
+
+runs:
+  using: 'node20'  # Use Ubuntu as the runtime environment
+  steps:
+   - name: Checkout code
+     uses: actions/checkout@v2
+    
+   - name: Build with Maven
+     run: mvn -B package --file pom.xml
+     shell: bash
+
+   - name: Run tests
+     run: mvn test --file pom.xml
+     shell: bash
