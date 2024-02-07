@@ -23,7 +23,7 @@ jobs:
       # Generates a BoM and uploads it to OWASP Dependency Track
       - name: Generates BoM and upload to OWASP DTrack
         id: riskscoreFromDT
-        uses:  AbhinavKannaujia/POC@main
+        uses:  AbhinavKannaujia/POC@master
         with:
           url: 'https://dtrack.poc.com'
           language: 'java'
