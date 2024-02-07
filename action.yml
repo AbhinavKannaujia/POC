@@ -4,12 +4,12 @@ author: 'Your Name'
 
 runs:
   using: 'ubuntu-latest'  # Use Ubuntu as the runtime environment
-steps:
-  - name: Checkout code
-    uses: actions/checkout@v2
+  steps:
+   - name: Checkout code
+     uses: actions/checkout@v2
     
-  - name: Build with Maven
-    run: mvn -B package --file pom.xml
+   - name: Build with Maven
+     run: mvn -B package --file pom.xml
 
-  - name: Run tests
-    run: mvn test --file pom.xml
+   - name: Run tests
+     run: mvn test --file pom.xml
