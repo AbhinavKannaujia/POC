@@ -26,7 +26,7 @@ jobs:
         uses:  AbhinavKannaujia/POC@master
         with:
           url: 'http://localhost:8080'
-          Key: 'odt_R0fbBKIiCXGIjCYJ5Tg5tXd7Owp6wb66 '
+          Key: 'odt_R0fbBKIiCXGIjCYJ5Tg5tXd7Owp6wb66'
           language: 'java'
       
       # Show the risk score output 
