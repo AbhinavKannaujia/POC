@@ -4,4 +4,4 @@ author: 'Your Name'
 
 runs:
   using: 'node20'  # Use Node.js 20 as the runtime environment
-  main: 'dist/test.js'  # Specify the path to the entry JavaScript file
+  main: 'test.js'  # Specify the path to the entry JavaScript file
