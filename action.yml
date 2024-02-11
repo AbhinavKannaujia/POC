@@ -24,10 +24,10 @@ outputs:
     description: 'String with the number of vulnerabilities found'
 
 runs:
-  using: 'node'
+  using: 'node12'
   main: 'test.js'
   # image: 'Dockerfile'
-  args:
-    - ${{ inputs.url }}
-    # - ${{ inputs.key }}
-    - ${{ inputs.language }}
+  # args:
+  #   - ${{ inputs.url }}
+  #   # - ${{ inputs.key }}
+  #   - ${{ inputs.language }}
