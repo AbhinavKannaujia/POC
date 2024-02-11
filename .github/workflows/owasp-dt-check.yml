@@ -25,7 +25,7 @@ jobs:
         id: riskscoreFromDT
         uses:  AbhinavKannaujia/POC@master
         with:
-          url: 'https://dtrack.poc.com'
+          url: 'http://localhost:8081/'
           key: '${{ secrets.SECRET_OWASP_DT_KEY }}'
           language: 'java'
       
