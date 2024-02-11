@@ -24,8 +24,9 @@ outputs:
     description: 'String with the number of vulnerabilities found'
 
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
+  using: 'node'
+  main: 'test.js'
+  # image: 'Dockerfile'
   args:
     - ${{ inputs.url }}
     # - ${{ inputs.key }}
